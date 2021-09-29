@@ -10,45 +10,49 @@
 </head>
 <body>
     <div class="container">
+        <div class="slider-thumb"></div>
     <nav>
         <div class="nav-container">
             <div class="nav-bar">
                 <ul>
                     <li><a href="" class="">Home</a></li>
-                    <li><a href="" class="">Projects</a></li>
-                    <li><a href="" class="">Skills</a></li>
-                    <li><a href="" class="">Resume</a></li>
+                    <li><a href="#projects-heading" class="">Projects</a></li>
+                    <li><a href="#skills-heading" class="">Skills</a></li>
+                    <li><button id="resume-button" href="#PATH_TO_FILE" download="#PROPOSED_FILE_NAME">Resume</button></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="hero-section">
         <div class="hero-text">
-            <h1 id="main-heading">Ahmed McGarry</h1>
-            <h2 id="main-subheading">A Developer with a Passion for Technology</h2>
+            <h1 id="main-heading">Hi, I'm Ahmed<span id="anim">...</span></h1>
         </div>
-        <!-- <div class="button-div">
-            <button class="hero-button">Resume</button>
-            <button class="hero-button">Github</button>
-        </div> -->
-        <div class="waveWrapper waveAnimation">
-            <div class="waveWrapperInner bgTop">
-              <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+            <h2 id="main-subheading">A Developer with a Passion for Technology </h2>
+            <div id="socials">
+                <ul>
+                   <li>
+                       <a href="https://www.linkedin.com">
+                            <img id="linked-in" src="images/linkedin.svg" alt="">
+                        </a>
+                   </li>
+                   <li>
+                       <a href="https://www.github.com">
+                            <img id="github" src="images/github.svg" alt="">
+                       </a>
+                   </li> 
+                </ul>
             </div>
-            <div class="waveWrapperInner bgMiddle">
-              <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-            </div>
-            <div class="waveWrapperInner bgBottom">
-              <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
-            </div>
+            <img id="workimage" src="https://www.thegranitelist.com/static/media/solutionaImage.49935d12.svg" alt="">
         </div>
-    </div>
     <div class="projects-section">
         <h2 id="projects-heading">Projects</h2>
         <p id="projects-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <div class="" id="projects-container">
-
+        <div class="personal-projects">
+            <div class="" id="projects-container"></div>
+            <div class="" id="projects-container"></div>
+            <div class="" id="projects-container"></div>
+            <div class="" id="projects-container"></div>
         </div>
         <div class="icon-container">
         <ol>
@@ -63,14 +67,24 @@
     </div>
     </div>
     <div class="skills">
+        <div class="skills-hero">
         <h2 id="skills-heading">Skills/About me</h2>
-        <p id="skills-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="skills-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <p id="skills-subheading">
+        <p class="skills-subheading">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        </p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.        
+        </p>
+        <div class="contact-button">
+            <button id="contact-me-button">Contact Me</button>
+        </div>
     </div>
+    </div>
+    <footer>
+        
+    </footer>
+    
 </div>
 </body>
 </html>
