@@ -1,7 +1,4 @@
-/* 
-86377b / purple
-27273c / darks
- */
+
 body {
     margin: none;
     padding: none;
@@ -11,19 +8,30 @@ body {
 
 }
 
+.title {
+    height: 1000px;
+    width: 1000px;
+    background-color: red;
+}
+
 a {
     color: black;
 }
 
 /* NAV */
 
+
 li, ul, a {
     display: flex;
     list-style: none;
     text-decoration: none;
     padding: 1em;
-    justify-content: space-evenly;
     transition: all .4s ease-in-out;
+}
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 a:hover {
@@ -57,6 +65,13 @@ a:hover {
  transform: scale(1.2);
 }
 
+.hamburger {
+    display: none;
+}
+
+.resume-mobile {
+    display: none;
+}
 /* HERO */
 
 .hero-section {
@@ -177,9 +192,13 @@ a:hover {
 
 .icon-container, ol, li {
     display: flex;
+    justify-content: center;
     list-style: none;
 }
 
+.icon-container {
+    flex-shrink: 1;
+}
 
 #tech-icon { 
     width: 10em;
@@ -237,8 +256,12 @@ a:hover {
 
 /* footer */
 
-footer {
-    
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #5C7AEA;
+    cursor: pointer;
+    width: 15%;
 }
 
 /* Blob Animation*/  
@@ -307,12 +330,67 @@ footer {
     }
 }
 
+
 /* Mobile Design */
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 700px)  {
     body {
         
     }
+    .icon-container ol {
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        padding: 2em;
 
+    }
+    .slider-thumb::before {
+        left: 20%;
+    }
+    .hero-text {
+        margin-top: 30%;
+    }
+
+    .resume-mobile{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+        padding: 1.5em;
+        width: 160%;
+    }
+    .nav-bar {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .nav-ul {
+        display: none;
+        width: 100%;
+        top: 100%;
+        position: absolute;
+        flex-direction: column;
+        border-radius: 2em;
+        border-bottom: 2px solid blue;
+        z-index: 101;
+    }
+
+    .nav-ul li a { 
+    }
+
+    .nav-ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        height: 30px;
+        width: auto;
+        padding: 2em;
+    }
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+    }
     #main-heading {
         margin-top: 1em;
         font-size: 5em;
@@ -322,9 +400,6 @@ footer {
         background-color: #5C7AEA;
     }
 
-    #tech-icon {
-        flex-basis: 1%;
-    }
 }
   
 

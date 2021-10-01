@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,200&display=swap" rel="stylesheet">
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,11 +14,12 @@
     <nav>
         <div class="nav-container">
             <div class="nav-bar">
-                <ul>
-                    <li><a href="" class="">Home</a></li>
+                <button class="hamburger" id="hamburger"><img class="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt=""></button>
+                <ul class="nav-ul" id="nav-ul">
+                    <li><a href="#main-heading" class="">Home</a></li>
                     <li><a href="#projects-heading" class="">Projects</a></li>
                     <li><a href="#skills-heading" class="">Skills</a></li>
-                    <li><button id="resume-button" href="#PATH_TO_FILE" download="#PROPOSED_FILE_NAME">Resume</button></li>
+                    <li><button class="resume-button" id="resume-button" href="#PATH_TO_FILE" download="#PROPOSED_FILE_NAME">Resume</button></li>
                 </ul>
             </div>
         </div>
@@ -41,6 +42,9 @@
                        </a>
                    </li> 
                 </ul>
+            </div>
+            <div >
+                <button class="resume-mobile" id="resume-button" href="#PATH_TO_FILE" download="#PROPOSED_FILE_NAME">Resume</button>
             </div>
             <img id="workimage" src="https://www.thegranitelist.com/static/media/solutionaImage.49935d12.svg" alt="">
         </div>
@@ -68,7 +72,7 @@
     </div>
     <div class="skills">
         <div class="skills-hero">
-        <h2 id="skills-heading">Skills/About me</h2>
+        <h2 id="skills-heading">About Me</h2>
         <p class="skills-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
@@ -84,7 +88,7 @@
     <footer>
         
     </footer>
-    
+    <script src="script.js"></script>
 </div>
 </body>
 </html>
